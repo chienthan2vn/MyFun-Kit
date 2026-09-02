@@ -1,0 +1,10 @@
+{
+  "track_id": "<track_id>",
+  "type": "<feature|bug|chore|refactor>",
+  "status": "new",
+  "priority": "medium",
+  "depends_on": [],
+  "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "updated_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "description": "<Initial user description>"
+}
