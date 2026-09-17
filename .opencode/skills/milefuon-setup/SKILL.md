@@ -1,19 +1,19 @@
 ---
 name: milefuon-setup
-description: "Use when (a) initializing a new project for Milefuon, OR (b) re-running setup after the 3 overview files were lost. Creates the milefuon/ folder (product.md, tech-stack.md, workflow.md, tracks.md, patterns.md) and AGENT.md. Do NOT use for ongoing track creation — that's milefuon-newtrack. Run once per project before milefuon-newtrack."
+description: "Use when (a) initializing a new project for Milefuon, OR (b) re-running setup after the 3 overview files were lost. Creates the milefuon/ folder (product.md, tech-stack.md, workflow.md, tracks.md, patterns.md) and AGENTS.md. Do NOT use for ongoing track creation — that's milefuon-newtrack. Run once per project before milefuon-newtrack."
 ---
 
 # Milefuon Setup
 
-Scaffold a new project for the Milefuon context-driven workflow. One-time ceremony. Scope: create overview files + AGENT.md. Do NOT create any track — `milefuon-newtrack` handles that with its discovery gate.
+Scaffold a new project for the Milefuon context-driven workflow. One-time ceremony. Scope: create overview files + AGENTS.md. Do NOT create any track — `milefuon-newtrack` handles that with its discovery gate.
 
 <HARD-GATE>
 Do NOT proceed past Section 1.0 if any required tool call fails. Do NOT scaffold until you have presented each drafted file to your human partner and received explicit approval at each Section 2.x gate. No file is written without its review gate.
 </HARD-GATE>
 
-**Language Rule:** All artifacts (`product.md`, `tech-stack.md`, `workflow.md`, `AGENT.md`, `tracks.md`, `patterns.md`) MUST be written in English. Conversational communication with the human partner (explanations, summaries, review prompts outside artifacts) is in Vietnamese.
+**Language Rule:** All artifacts (`product.md`, `tech-stack.md`, `workflow.md`, `AGENTS.md`, `tracks.md`, `patterns.md`) MUST be written in English. Conversational communication with the human partner (explanations, summaries, review prompts outside artifacts) is in Vietnamese.
 
-**Path convention:** Inside skill → path from skill (`scripts/...`, `references/...`). Outside skill → path from project root (`./milefuon/...`, `./AGENT.md`).
+**Path convention:** Inside skill → path from skill (`scripts/...`, `references/...`). Outside skill → path from project root (`./milefuon/...`, `./AGENTS.md`).
 
 ---
 
@@ -48,7 +48,7 @@ Present to your human partner:
 > "Welcome to Milefuon. I will guide you through:
 > 1. **Project Discovery:** Analyze if this is a new or existing project
 > 2. **Context Files:** Define vision, tech stack, and workflow (3 questions)
-> 3. **Scaffold:** Create the ./milefuon/ folder and ./AGENT.md
+> 3. **Scaffold:** Create the ./milefuon/ folder and ./AGENTS.md
 >
 > Total: ~3 questions, ~3 minutes. Let's get started!"
 
@@ -265,13 +265,13 @@ Proceed to **Section 2.1**.
 
 ---
 
-## 2.5 Generate AGENT.md — Root Operating Protocol
+## 2.5 Generate AGENTS.md — Root Operating Protocol
 
-1. **Announce:** "Creating `./AGENT.md` — the operating protocol every agent reads at session start."
+1. **Announce:** "Creating `./AGENTS.md` — the operating protocol every agent reads at session start."
 
-2. **Write File:** Read `references/AGENT-template.md` and write to `./AGENT.md` at project root.
+2. **Write File:** Read `references/AGENT-template.md` and write to `./AGENTS.md` at project root.
 
-3. **Verify:** Confirm `./AGENT.md` exists at project root with `ls -la ./AGENT.md`.
+3. **Verify:** Confirm `./AGENTS.md` exists at project root with `ls -la ./AGENTS.md`.
 
 ---
 
@@ -279,7 +279,7 @@ Proceed to **Section 2.1**.
 
 1. **Summarize:** List all files created:
    > "Setup complete. Files created:"
-   > - `./AGENT.md` — operating protocol (read-before-act, per-session overview files only)
+   > - `./AGENTS.md` — operating protocol (read-before-act, per-session overview files only)
    > - `./milefuon/product.md` — vision, goals, non-goals
    > - `./milefuon/tech-stack.md` — languages, frameworks, databases, tools
    > - `./milefuon/workflow.md` — methodology, coverage
@@ -291,7 +291,7 @@ Proceed to **Section 2.1**.
    > - `./milefuon/setup_state.json` — resume state (`complete`)
 
 2. **Next Steps:** Announce:
-   > "Run `milefuon-newtrack` to create your first track. Every new session, agents will read the 5 overview files listed in ./AGENT.md before any work."
+   > "Run `milefuon-newtrack` to create your first track. Every new session, agents will read the 5 overview files listed in ./AGENTS.md before any work."
 
 ---
 
@@ -303,7 +303,7 @@ Proceed to **Section 2.1**.
 | "Product guidelines and style guides are needed too" | YAGNI. Add them when a track needs them — not during setup. |
 | "I'll skip the user review gate and just write the file" | Every Section 2.x has a User Review Gate. Violation = invalid setup. |
 | "The inferred tech stack is obvious, no need to confirm" | Brownfield inference is a guess. Always confirm with the user. |
-| "I can skip the read sequence — I know the stack" | AGENT.md exists precisely so you don't guess. Read all 5 files. |
+| "I can skip the read sequence — I know the stack" | AGENTS.md exists precisely so you don't guess. Read all 5 files. |
 
 ---
 
@@ -311,7 +311,7 @@ Proceed to **Section 2.1**.
 
 | File | Created by | Updated by |
 |------|-----------|------------|
-| `./AGENT.md` | `milefuon-setup` | `milefuon-setup` only (re-run) |
+| `./AGENTS.md` | `milefuon-setup` | `milefuon-setup` only (re-run) |
 | `./milefuon/product.md` | `milefuon-setup` | `milefuon-archive` (scope pivot) |
 | `./milefuon/tech-stack.md` | `milefuon-setup` | `milefuon-archive` (stack change) |
 | `./milefuon/workflow.md` | `milefuon-setup` | `milefuon-archive` (methodology change) |

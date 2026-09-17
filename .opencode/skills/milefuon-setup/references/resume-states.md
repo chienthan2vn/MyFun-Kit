@@ -27,7 +27,7 @@ Maps `milefuon/setup_state.json` → resume point.
                                                                                                   2.4 Scaffold ──→ [state: complete]
                                                                                                                             │
                                                                                                                             ▼
-                                                                                                                  2.5 AGENT.md + Finalize
+                                                                                                                  2.5 AGENTS.md + Finalize
 ```
 
 ## State File Format
